@@ -1,2 +1,11 @@
+eureka:
+  instance:
+    hostname:  192.168.137.130
+    prefer-ip-address: true
+    appname: 订单服务
+  client:
+    eureka-server-port: 9000
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.client.eureka-server-port}/eureka
 
 
