@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdminController {
     @RequestMapping("/home")
     public static String home() {
-        return "home hello";
+        return "admin home hello";
     }
     @RequestMapping("/index")
     public static String index() {
-        return "index hello";
+        return "admin index hello";
     }
 }

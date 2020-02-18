@@ -1,6 +1,8 @@
 package com.rock.user.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,10 +12,15 @@ public class UserController {
 
     @RequestMapping("/home")
     public static String home() {
-        return "home hello";
+        return "user home hello";
     }
     @RequestMapping("/index")
     public static String index() {
-        return "index hello";
+        return "user index hello";
+    }
+    @GetMapping("/{id}")
+    public String getUser(@PathVariable("id") String id) {
+        System.out.println("接收到请求[/user/" + id + "]");
+        return "testUser";
     }
 }
