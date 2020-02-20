@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class OrderController {
     // 这里配置的是我们要调用的服务实例名，我们要调用USER服务，因此这里的地址是USER
-    private String rest_url_prefix = "http://user-server";
+    private String rest_url_prefix = "http://USER-SERVER";
     @Autowired
     private RestTemplate restTemplate;
 

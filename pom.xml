@@ -17,10 +17,8 @@
 
     <modules>
         <module>eureka</module>
-        <module>admin-service</module>
         <module>user-service</module>
         <module>order-server</module>
-        <module>myweb</module>
     </modules>
 
     <properties>
